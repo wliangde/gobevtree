@@ -45,5 +45,5 @@ func (node *NonePrioritySelector) Evaluate(input interface{}) bool {
 			return true
 		}
 	}
-	return node.Evaluate(input)
+	return node.PrioritySelector.Evaluate(input)
 }
